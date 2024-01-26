@@ -104,3 +104,93 @@ export const footLink = [
     ],
   },
 ];
+
+export const popularLinks = [
+  {
+    name: "main dish",
+    href: "/main-dish",
+  },
+  {
+    name: "cooking for two",
+    href: "/",
+  },
+
+  {
+    name: "quick and easy for one",
+    href: "/",
+  },
+  {
+    name: "dinner",
+    href: "/",
+  },
+  {
+    name: "see all",
+    href: "/",
+  },
+];
+
+export const mealsLinks = [
+  {
+    name: "breakfast",
+    href: "/main-dish",
+  },
+  {
+    name: "lunch",
+    href: "/",
+  },
+
+  {
+    name: "healthy",
+    href: "/",
+  },
+  {
+    name: "soups",
+    href: "/",
+  },
+  {
+    name: "bread",
+    href: "/",
+  },
+  {
+    name: "salads",
+    href: "/",
+  },
+  {
+    name: "see all",
+    href: "/",
+  },
+];
+
+export const cookingTipsLinks = [
+  {
+    name: "air fryer",
+    href: "/",
+  },
+  {
+    name: "bbq & grilling",
+    href: "/",
+  },
+  {
+    name: "how to",
+    href: "/",
+  },
+  {
+    name: "food tips",
+    href: "/",
+  },
+];
+
+export const healthLinks = [
+  {
+    name: "vegetarians",
+    href: "/",
+  },
+  {
+    name: "weight watchers",
+    href: "/",
+  },
+  {
+    name: "health tips",
+    href: "/",
+  },
+];
