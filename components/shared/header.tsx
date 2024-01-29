@@ -16,6 +16,7 @@ import {
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
 import SearchBox from "./search-box";
+import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 
 export default function Header() {
   const [showSearch, setShowSearch] = useState(false);
@@ -62,25 +63,15 @@ export default function Header() {
           </button>
           <FaHeart className="hidden lg:flex" />
 
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <h3 className="lg:flex hidden cursor-pointer items-center gap-1 text-[18px]">
-                <IoPersonOutline />
-              </h3>
-            </DropdownMenuTrigger>
+          <SignedIn>
+            {/* Mount the UserButton component */}
+            <UserButton afterSignOutUrl="/" />
+          </SignedIn>
 
-            <DropdownMenuContent className="w-56 z-[51] " align="end">
-              <div className="flex flex-col p-2 gap-2 w-full">
-                <Button asChild className="text-[#fff]">
-                  <Link href="/sign-up">Sign Up</Link>
-                </Button>
-
-                <Button asChild variant="outline">
-                  <Link href="/login">Login</Link>
-                </Button>
-              </div>
-            </DropdownMenuContent>
-          </DropdownMenu>
+          <SignedOut>
+            {/* Signed out users get sign in button */}
+            <SignInButton />
+          </SignedOut>
 
           <MobileSideBar />
         </div>

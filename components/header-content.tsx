@@ -1,4 +1,3 @@
-
 import { navLinks } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
@@ -21,11 +20,6 @@ export default function HeaderContent() {
         ))}
         <Button className="uppercase text-[#fff]">Add Recipe</Button>
       </div>
-
-      <Link href="/login" className="flex items-center justify-start gap-2">
-        <BsPerson className="text-[25px]" />
-        <h3>Login/Create Account</h3>
-      </Link>
     </div>
   );
 }
